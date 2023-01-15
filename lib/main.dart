@@ -7,17 +7,29 @@ void main() {
         child: Scaffold(
           backgroundColor: Colors.teal,
           appBar: AppBar(title: const Text('DEMO APP')),
-          body: Center(
-            child: Container(
-              height: 300.0,
-              width: 300.0,
-              margin: const EdgeInsets.fromLTRB(30.0, 30.0, 30.0, 20.0),
-              padding: EdgeInsets.zero,
-              color: Colors.white,
-              child: const Text(
-                'Name: ',
-                style: TextStyle(color: Colors.orange),
-              ),
+          body: SafeArea(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                Container(
+                  height: 100.0,
+                  width: 100.0,
+                  color: Colors.white,
+                  child: const Text('Container1 '),
+                ),
+                Container(
+                  width: 100.0,
+                  height: 100.0,
+                  color: Colors.blue,
+                  child: const Text('Container2'),
+                ),
+                Container(
+                  width: 100.0,
+                  height: 100.0,
+                  color: Colors.red,
+                  child: const Text('Container3'),
+                ),
+              ],
             ),
           ),
         ),
